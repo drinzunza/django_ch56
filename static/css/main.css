@@ -1,0 +1,10 @@
+main {
+    min-height: calc(100vh - 92px);
+}
+
+footer {
+    background-color: #475e6b;
+    color: white;
+    padding: 20px 6px;
+    text-align: center;
+}

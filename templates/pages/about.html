@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    About Sergio Inzunza
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '/css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="about">
+    <!-- Hero Section -->
+    <section class="hero-section bg-primary text-white py-5 mb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="profile-photo mb-4">
+                        <div class="profile-placeholder">
+                            <i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+                        </div>
+                    </div>
+                    <h1 class="display-4 fw-bold mb-3">Sergio Inzunza</h1>
+                    <p class="lead mb-4">Full Stack Teacher | Senior Software Engineer</p>
+                    <p class="mb-4">Passionate about creating efficient, user-friendly web applications and solving complex problems through code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">About Me</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="about-card">
+                                <h4 class="mb-3"><i class="bi bi-mortarboard text-primary me-2"></i>Education</h4>
+                                <p>Currently pursuing software development education at <strong>SDGKU 2025</strong>, focusing on full-stack web development with Django and modern web technologies.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-card">
+                                <h4 class="mb-3"><i class="bi bi-laptop text-primary me-2"></i>Focus Areas</h4>
+                                <p>Specializing in <strong>Django</strong> backend development, database design, RESTful APIs, and creating responsive user interfaces with modern CSS frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Technical Skills</h2>
+                    <p class="lead text-muted">Technologies and tools I work with</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-3">
+                            <i class="bi bi-code-slash text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Backend Development</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li>Django & Python</li>
+                            <li>Database Design</li>
+                            <li>RESTful APIs</li>
+                            <li>SQL & SQLite</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-3">
+                            <i class="bi bi-palette text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Frontend Development</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li>HTML5 & CSS3</li>
+                            <li>Bootstrap 5</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-3">
+                            <i class="bi bi-tools text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Development Tools</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Virtual Environments</li>
+                            <li>Command Line</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Project Section -->
+    <section class="project-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-4">Current Project</h2>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">Notes Application</h5>
+                            <p class="card-text text-muted mb-4">
+                                Building a full-featured note-taking application using Django as part of my capstone project. 
+                                This application demonstrates my understanding of Django's MVC architecture, database relationships, 
+                                user authentication, and responsive web design.
+                            </p>
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                                <span class="badge bg-primary">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-3">Let's Connect</h2>
+                    <p class="lead mb-4">Interested in collaborating or learning more about my work?</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="/contact/" class="btn btn-light btn-lg px-4">
+                            <i class="bi bi-envelope me-2"></i>Get In Touch
+                        </a>
+                        <button class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-github me-2"></i>View Projects
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

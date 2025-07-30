@@ -1,0 +1,35 @@
+
+.notes {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    background-color: #f4f4f4;
+}
+
+.notes h1 {
+    text-align: center;
+    color: darkcyan;
+}
+
+.notes .note-item {
+    border: 1px solid #97afb9;
+    border-radius: 4px;
+    background-color:white;
+    padding: 5px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.notes .note-item h4 {
+    font-weight: 400;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.notes .note-item img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.notes .note-item label {
+    color: #b0b0b0;
+}
